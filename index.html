@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BIRD NEST BOOKSHOP</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The homepage for Bird Nest Bookshop" />
+
+    <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+    <!-- global.css contains resets, custom properties, and utility classes -->
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- start from the top-level component and work your way down -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app-header.css" />
+    <link rel="stylesheet" href="css/header-dropdown.css" />
+    <link rel="stylesheet" href="css/app-footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="container">
+        <a href="index.html">
+          <img src="images/site/logo.png" alt="Bird Nest Bookshop Logo" class="logo" />
+        </a>
+        <a href="index.html" class="text-logo">BIRD NEST<br />BOOKSHOP</a>
+
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <div class="header-dropdown">
+            <span class="categories-label">Categories</span>
+            <ul>
+              <li><a href="category.html?category=NewArrivals">New Arrivals</a></li>
+              <li><a href="category.html?category=Bestsellers">Bestsellers</a></li>
+              <li><a href="category.html?category=MysteryThriller">Mystery &amp; Thriller</a></li>
+              <li><a href="category.html?category=ChildrensBooks">Children's Books</a></li>
+              <li><a href="category.html?category=Classics">Classics</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <form action="category.html" class="search-form">
+          <input type="text" class="search-bar" placeholder="Search" />
+          <button type="submit" class="icon-button search-button">
+            <img src="images/icons/search.png" alt="Search Icon" />
+          </button>
+        </form>
+
+        <a href="#" class="login-link">Sign In</a>
+
+        <a href="#" class="cart-link">
+          <img src="images/icons/cart.png" alt="Cart Icon" />
+          <span class="cart-count">0</span>
+        </a>
+      </header>
+
+      <div>
+
+      </div>
+      
+      <footer class="container">
+        <p class="copyright">&copy; 2026 Bird Nest Bookshop</p>
+
+        <section class="links">
+          <a href="index.html">Contact</a>
+          <a href="index.html">Directions</a>
+        </section>
+        <section class="social-media-icons">
+          <a href="#">
+            <img src="images/icons/facebook.png" alt="Facebook Logo" />
+          </a>
+          <a href="#">
+            <img src="images/icons/twitter.png" alt="X Logo" />
+          </a>
+        </section>
+      </footer>
+    </main>
+  </body>
+</html>
