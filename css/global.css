@@ -16,10 +16,10 @@
   --font-body: Verdana, "Segoe UI", sans-serif;
 
   /* Spacing */
-  --space-xs: 6px;
+  --space-xs: 4px;
   --space-sm: 12px;
   --space-md: 20px;
-  --spage-lg: 32px;
+  --space-lg: 32px;
   --space-x1: 48px;
 
   /* Radius */

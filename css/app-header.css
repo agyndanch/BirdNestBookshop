@@ -1,12 +1,23 @@
 header.container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: var(--space-md);
   padding: var(--space-sm) var(--space-lg);
   background-color: var(--color-header-bg);
   color: var(--color-header-text);
-  max-width: none;
-  margin: 0;
+}
+
+.header-left {
+  display:flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-left: auto;
 }
 
 .logo {
@@ -21,11 +32,14 @@ header.container {
 
 .main-nav {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: var(--space-md);
+  margin-left: var(--space-x1);
 }
 
 .main-nav a {
+  display: flex;
+  align-items: center;
   color: var(--color-header-text);
 }
 
@@ -38,7 +52,7 @@ header.container {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  width: 220px;
+  width: 240px;
   background-color: var(--color-bg-panel);
   border: 1px solid var(--color-border);
   padding: 4px 8px;
