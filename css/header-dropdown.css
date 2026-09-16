@@ -38,6 +38,7 @@
   width: max-content;
   padding: var(--space-xs) 0;
   font-size: 0.85rem;
+  z-index: 10;
 }
 
 .header-dropdown:hover ul,

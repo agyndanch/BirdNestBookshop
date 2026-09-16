@@ -55,3 +55,68 @@
 .hero-cta:focus {
   opacity: 0.85;
 }
+
+.featured {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.featured-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  text-align: center;
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.featured-title .line {
+  flex: 1;
+  height: 3px;
+  background-color: var(--color-border);
+}
+
+.featured-books {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.featured-book {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.featured-book-cover {
+  height:200px;
+  background-color: var(--color-egg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.featured-book-cover img {
+  height: 200px;
+  width: auto;
+}
+
+.featured-book-info {
+  background-color: var(--color-moss);
+  color: var(--color-header-text);
+  padding: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--space-xs)
+}
+
+.featured-book-title {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.featured-book-author {
+  font-style: italic;
+  font-size: 0.8rem;
+}

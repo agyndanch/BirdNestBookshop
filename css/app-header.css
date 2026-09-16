@@ -71,11 +71,25 @@ header.container {
 
 .search-button {
   flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-button img {
   width: 16px;
   height: 16px;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+
+.search-button:hover img,
+.search-button:focus img {
+  opacity: 0.6;
 }
 
 .login-link {
