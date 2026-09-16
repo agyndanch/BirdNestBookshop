@@ -1,22 +1,39 @@
-#book-boxes {
+.category-list-header {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
-  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
 }
 
-.book-box {
+.category-list-title {
+  margin: 0;
+}
+
+.pagination {
   display: flex;
-  flex-direction: column;
-  background-color: var(--card-background-color);
-  padding: 1em;
-  gap: 0.25em;
+  gap: var(--space-xs);
 }
 
-.book-title {
-  font-weight: bold;
+.pagination-item {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.book-author {
-  font-style: italic;
+.pagination-item:hover {
+  background-color: var(--color-border);
+  color: var(--color-header-text);
+}
+
+.pagination-arrow {
+  font-size: 1.1rem;
 }

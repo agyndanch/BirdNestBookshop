@@ -22,126 +22,185 @@
   <body>
     <main>
       <header class="container">
-        <section class="bookstore-logo">
+        <section class="header-left">
           <a href="index.html">
-            <img
-              src="images/site/bookstore-logo.png"
-              alt="Another Bookstore Logo"
-              width="150px"
-              height="auto"
-            />
+            <img src="images/site/logo.png" alt="Bird Nest Bookshop Logo" class="logo" />
           </a>
+          <a href="index.html" class="text-logo">BIRD NEST<br />BOOKSHOP</a>
         </section>
-        <section class="title-and-search-bar">
-          <h1 class="text-logo">Another Bookstore</h1>
-          <form action="category.html">
-            <input type="text" class="search-bar" /><br />
-            <input type="submit" class="button search-button" value="Search" />
-          </form>
-        </section>
-        <section class="header-dropdown-and-cart">
-          <button class="button">cart (0)</button>
-          <button class="button">login</button>
+
+        <nav class="main-nav">
+          <a href="index.html">HOME</a>
           <div class="header-dropdown">
-            <button class="button categories-button">Categories</button>
+            <span class="categories-label">CATEGORIES</span>
             <ul>
+              <li><a href="category.html?category=NewArrivals">New Arrivals</a></li>
+              <li><a href="category.html?category=Bestsellers">Bestsellers</a></li>
+              <li><a href="category.html?category=MysteryThriller">Mystery &amp; Thriller</a></li>
+              <li><a href="category.html?category=ChildrensBooks">Children's Books</a></li>
               <li><a href="category.html?category=Classics">Classics</a></li>
-              <li><a href="category.html?category=Fantasy">Fantasy</a></li>
-              <li><a href="category.html?category=Mystery">Mystery</a></li>
-              <li><a href="category.html?category=Romance">Romance</a></li>
             </ul>
           </div>
+        </nav>
+
+        <section class="header-right">
+          <form action="category.html" class="search-form">
+            <input type="text" class="search-bar" placeholder="Search" />
+            <button type="submit" class="icon-button search-button">
+              <img src="images/icons/search.png" alt="Search Icon" />
+            </button>
+          </form>
+
+          <a href="#" class="login-link">SIGN IN</a>
+
+          <a href="#" class="cart-link">
+            <img src="images/icons/cart.png" alt="Cart Icon" />
+            <span class="cart-count">0</span>
+          </a>
         </section>
+
+        
       </header>
-      <div class="category-page">
-        <nav class="category-nav">
-          <ul class="category-buttons">
-            <li class="button selected-category-button">Classics</li>
-            <li>
-              <a class="button unselected-category-button" href="category.html"
-                >Fantasy</a
-              >
+
+      <div class="category-page container">
+        <aside class="category-sidebar">
+          <h3 class="category-sidebar-title">Categories</h3>
+          <hr class="category-sidebar-divider" />
+          <ul class="category-filter-list">
+            <li class="category-filter-item">
+              <span class="category-filter-marker"></span>
+              <span class="category-filter-label">New Arrivals</span>
             </li>
-            <li>
-              <a class="button unselected-category-button" href="category.html"
-                >Mystery</a
-              >
+            <li class="category-filter-item">
+              <span class="category-filter-marker"></span>
+              <span class="category-filter-label">Bestsellers</span>
             </li>
-            <li>
-              <a class="button unselected-category-button" href="category.html"
-                >Romance</a
-              >
+            <li class="category-filter-item">
+              <span class="category-filter-marker"></span>
+              <span class="category-filter-label">Mystery &amp; Thriller</span>
+            </li>
+            <li class="category-filter-item">
+              <span class="category-filter-marker"></span>
+              <span class="category-filter-label">Children's Books</span>
+            </li>
+            <li class="category-filter-item selected-category-item">
+              <span class="category-filter-marker"></span>
+              <span class="category-filter-label">Classics</span>
             </li>
           </ul>
-        </nav>
+        </aside>
+
         <section class="category-book-list">
+          <div class="category-list-header">
+            <h2 class="category-list-title">Classics</h2>
+            <nav class="pagination">
+              <button class="pagination-item pagination-arrow">&#8249;</button>
+              <button class="pagination-item">1</button>
+              <button class="pagination-item">2</button>
+              <button class="pagination-item">3</button>
+              <button class="pagination-item pagination-arrow">&#8250;</button>
+            </nav>
+          </div>
+
           <ul id="book-boxes">
             <li class="book-box">
               <div class="book-image">
-                <a href="#">
-                  <img src="images/books/the-iliad.gif" alt="The Iliad" />
-                </a>
+                <a href="#"><img src="" alt="book" /></a>
               </div>
-              <div class="book-title">The Iliad</div>
-              <div class="book-author">Homer</div>
-              <div class="book-price">$6.99</div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
               <button class="button">Add to Cart</button>
               <button class="button">Read Now</button>
             </li>
             <li class="book-box">
               <div class="book-image">
-                <a href="#">
-                  <img
-                    src="images/books/the-brothers-karamazov.gif"
-                    alt="The Brothers Karamazov"
-                  />
-                </a>
+                <a href="#"><img src="" alt="book" /></a>
               </div>
-              <div class="book-title">The Brothers Karamazov</div>
-              <div class="book-author">Fyodor Dostoyevski</div>
-              <div class="book-price">$13.99</div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
               <button class="button">Add to Cart</button>
               <button class="button">Read Now</button>
             </li>
             <li class="book-box">
               <div class="book-image">
-                <a href="#">
-                  <img
-                    src="images/books/little-dorrit.gif"
-                    alt="Little Dorrit"
-                  />
-                </a>
+                <a href="#"><img src="" alt="book" /></a>
               </div>
-              <div class="book-title">Little Dorrit</div>
-              <div class="book-author">Charles Dickens</div>
-              <div class="book-price">$5.99</div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
               <button class="button">Add to Cart</button>
               <button class="button">Read Now</button>
             </li>
             <li class="book-box">
               <div class="book-image">
-                <a href="#">
-                  <img src="images/books/moby-dick.gif" alt="Moby Dick" />
-                </a>
+                <a href="#"><img src="" alt="book" /></a>
               </div>
-              <div class="book-title">Moby Dick</div>
-              <div class="book-author">Herman Melville</div>
-              <div class="book-price">$6.99</div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#"><img src="" alt="book" /></a>
+              </div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#"><img src="" alt="book" /></a>
+              </div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#"><img src="" alt="book" /></a>
+              </div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
+              <button class="button">Add to Cart</button>
+              <button class="button">Read Now</button>
+            </li>
+            <li class="book-box">
+              <div class="book-image">
+                <a href="#"><img src="" alt="book" /></a>
+              </div>
+              <div class="book-title"></div>
+              <div class="book-author"></div>
+              <div class="book-price"></div>
               <button class="button">Add to Cart</button>
               <button class="button">Read Now</button>
             </li>
           </ul>
         </section>
       </div>
+
       <footer class="container">
+        <p class="copyright">&copy; 2026 Bird Nest Bookshop</p>
+
         <section class="links">
-          <a href="index.html">about</a>
-          <a href="index.html">contact</a>
-          <a href="index.html">directions</a>
+          <a href="index.html">Contact</a>
+          <a href="index.html">Directions</a>
         </section>
         <section class="social-media-icons">
-          <a class="button" href="index.html">Facebook</a>
-          <a class="button" href="index.html">Twitter</a>
+          <a href="#">
+            <img src="images/icons/facebook.png" alt="Facebook Logo" />
+          </a>
+          <a href="#">
+            <img src="images/icons/x.png" alt="X Logo" />
+          </a>
         </section>
       </footer>
     </main>
