@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 0 var(--space-sm);
+  margin-bottom: var(--space-sm);
 }
 
 .category-list-title {
@@ -36,4 +37,108 @@
 
 .pagination-arrow {
   font-size: 1.1rem;
+}
+
+#book-boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  padding: 0 var(--space-xs);
+}
+
+.book-box {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 150px;
+}
+
+.book-title,
+.book-author,
+.book-price {
+  overflow-wrap: break-word;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.book-image {
+  position: relative;
+  height: 200px;
+  flex-shrink: 0;
+  background-color: var(--color-egg-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.book-image img {
+  height: 200px;
+  width: auto;
+}
+
+.read-now-button {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.read-now-button:hover,
+.read-now-button:focus {
+  opacity: 0.85;
+}
+
+.book-info {
+  background-color: var(--color-moss);
+  color: var(--color-header-text);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-sm);
+  gap: 1px;
+  min-width: 0;
+  flex: 1;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.book-author {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.book-price {
+  font-style: normal;
+  font-size: 0.7rem;
+  margin-bottom: var(--space-xs);
+}
+
+.add-to-cart-button {
+  margin-top: auto;
+  padding: var(--space-xs) var(--space-xs);
+  background-color: var(--color-border);
+  color: var(--color-header-text);
+  border: none;
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart-button:hover,
+.add-to-cart-button:focus {
+  opacity: 0.85;
 }

@@ -7,7 +7,7 @@
 
 .category-sidebar {
   flex-shrink: 0;
-  width: 220px;
+  width: 210px;
   background-color: var(--color-bg);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -68,4 +68,5 @@
 
 .category-book-list {
   flex: 1;
+  min-width: 0;
 }
